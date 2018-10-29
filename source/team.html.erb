@@ -1,0 +1,16 @@
+<div class="text-center" id="team-content">
+    <h1>This template is built with <i class="fa fa-heart"></i> by</h1>
+    <ul class="list-inline text-center">
+    <% ["joshbolland", "brotherkaif", "ifeodugbesan", "w5rd1"].each do |gh_username| %>
+        <li>
+        <% link_to "https://github.com/#{gh_username}", target: "_blank" do %>
+          <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "img-circle" %>
+        <% end %>        
+        <br>
+        <% link_to "https://github.com/#{gh_username}", target: "_blank" do %>
+          <i class="fab fa-github"></i> <%= gh_username %>
+        <% end %>
+        </li>
+    <% end %>
+    </ul>
+</div>
